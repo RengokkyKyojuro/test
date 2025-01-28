@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма введення</title>
+</head>
+<body>
+<h2>Форма введення інформації</h2>
+<form name="infoForm" onsubmit="return validateForm()">
+    <label for="name">ПІБ:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="year">Рік народження:</label>
+    <input type="text" id="year" name="year" maxlength="4" required><br><br>
+
+    <label>Стать:</label><br>
+    <input type="radio" id="male" name="gender" value="Чоловік" required>
+    <label for="male">Чоловік</label><br>
+    <input type="radio" id="female" name="gender" value="Жінка" required>
+    <label for="female">Жінка</label><br><br>
+
+    <label for="citizenship">Громадянство:</label>
+    <select id="citizenship" name="citizenship" required>
+        <option value="">Оберіть країну</option>
+        <option value="Україна">Україна</option>
+        <option value="Польща">Польща</option>
+        <option value="США">США</option>
+    </select><br><br>
+
+    <label>Інтереси:</label><br>
+    <input type="checkbox" id="interest1" name="interests" value="Спорт">
+    <label for="interest1">Спорт</label><br>
+    <input type="checkbox" id="interest2" name="interests" value="Музика">
+    <label for="interest2">Музика</label><br>
+    <input type="checkbox" id="interest3" name="interests" value="Подорожі">
+    <label for="interest3">Подорожі</label><br><br>
+
+    <input type="submit" value="Відправити">
+</form>
+</body>
+</html>
